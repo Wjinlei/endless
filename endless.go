@@ -338,10 +338,10 @@ func (srv *endlessServer) handleSignals() {
 			//srv.hammerTime(0 * time.Second)
 		case syscall.SIGINT:
 			log.Println(pid, "Received SIGINT.")
-			srv.shutdown()
+			//srv.shutdown()
 		case syscall.SIGTERM:
 			log.Println(pid, "Received SIGTERM.")
-			srv.shutdown()
+			//srv.shutdown()
 		case syscall.SIGTSTP:
 			log.Println(pid, "Received SIGTSTP.")
 		default:
