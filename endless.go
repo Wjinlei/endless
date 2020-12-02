@@ -15,7 +15,6 @@ import (
 	"sync"
 	"syscall"
 	"time"
-
 	// "github.com/fvbock/uds-go/introspect"
 )
 
@@ -336,7 +335,7 @@ func (srv *endlessServer) handleSignals() {
 			log.Println(pid, "Received SIGUSR1.")
 		case syscall.SIGUSR2:
 			log.Println(pid, "Received SIGUSR2.")
-			srv.hammerTime(0 * time.Second)
+			//srv.hammerTime(0 * time.Second)
 		case syscall.SIGINT:
 			log.Println(pid, "Received SIGINT.")
 			srv.shutdown()
